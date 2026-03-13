@@ -8,11 +8,16 @@ h1 {
 }
 
 /* navigation bar */
-.topnav {
+.nav {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 7%;
+    width: 100%;
     background-color: #333;
 }
 
-.topnav ul {
+.nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -20,7 +25,7 @@ h1 {
 }
 
 
-.topnav a {
+.nav a {
     display: block;
     color: #f2f2f2;
     text-align: center;
@@ -29,28 +34,26 @@ h1 {
     font-size: 17px;
 }
 
-.topnav a:hover {
+.nav a:hover {
     background-color: #ddd;
     color: black;
 }
 
-.topnav a.active {
+.nav a.active {
     background-color: #04AA6D;
     color: white;
 }
 
-/* footer */
-footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    height: 7%;
-    width: 100%;
-    background-color: #333;
-    color: white;
-    text-align: center;
+
+
+
+.Nbut button {
+    background-color: #04AA6D;
+    color: black;
+    cursor: pointer;
 }
 
-footer a:hover {
-    color: #04AA6D;
+.Nbut button:hover {
+    background-color: #04AA6D;
+    color: white;
 }
