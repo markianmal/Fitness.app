@@ -22,29 +22,18 @@
     </header>
 
     <main>
-
         <section>
-
-            <form action="">
+            <form action="" onsubmit="event.preventDefault();">
                 <p>
                     <input type="text" id="Search" placeholder="+ Choose exercise">
                 </p>
 
-                <!--<p>
-                    <br> <br>
-                    <select name="" id="">
-                        <option value="Ternopil">Ternopil</option>
-                        <option value="Lviv">Lviv</option>
-                        <option value="Kyiv">Kyiv</option>
-                        <option value="Krym">Krym</option>
-                    </select>
-                </p>-->
-
                 <p>
                     <button id="Cbut">+ Add exercise</button>
                 </p>
-
             </form>
+
+            <div id="exerciseResults" class="results-container"></div>
 
             <p>
                 ...
@@ -53,6 +42,7 @@
         </section>
     </main>
 
+    <script src="script.js"></script>
 </body>
 
 </html>
