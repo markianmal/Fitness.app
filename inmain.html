@@ -23,15 +23,25 @@
 
     <main>
         <section>
-            <form action="" onsubmit="event.preventDefault();">
-                <p>
-                    <input type="text" id="Search" placeholder="+ Choose exercise">
-                </p>
+        <form id="exerciseForm">
+            <p>
+                <input type="text" id="muscleGroup" required placeholder="Muscle group">
+            </p>
+            <p>
+                <input type="text" id="exerciseName" required placeholder="Exercise name">
+            </p>
+            <p>
+                <input type="number" id="setsInput" required placeholder="Sets">
+            </p>
+            <p>
+                <input type="number" id="repsInput" required placeholder="Reps">
+            </p>
+            <p>
+                <button type="submit" id="Cbut">+ Add exercise</button>
+            </p>
+        </form>
 
-                <p>
-                    <button id="Cbut">+ Add exercise</button>
-                </p>
-            </form>
+<div id="exerciseResults" class="results-container"></div>
 
             <div id="exerciseResults" class="results-container"></div>
 

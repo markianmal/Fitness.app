@@ -2,7 +2,6 @@ let exercise;
 
 function exercise() {
     
-
 switch (exercise) {
     case "Chest":
         images.push(`<img src="images/${exercise}.png" alt="Exercise ${exercise}">`); 
