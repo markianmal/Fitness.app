@@ -5,6 +5,17 @@ body {
 
 h1 {
     padding-top: 10px;
+    margin-left: 5px;
+}
+h2 {
+    margin-left: 5px;
+}
+
+input {
+    font-size: 1.5rem;
+    text-align: center;
+    width: 200px;
+    margin-left: 5px;
 }
 
 /* navigation bar */
@@ -54,6 +65,7 @@ h1 {
     color: white;
 }
 
+
 #ainmain {
     font-size: 1.45rem;
     font-weight: bold;
@@ -66,11 +78,49 @@ h1 {
     cursor: pointer;
     text-decoration: none;
 }
-
 #ainmain:hover {
-background-color: rgb(84, 84, 97);
+    background-color: rgb(84, 84, 97);
+}
+#ainmain:active {
+    background-color: rgb(119, 119, 252);
 }
 
-#ainmain:active {
-background-color: rgb(119, 119, 252);
+
+#Cbut {
+    font-size: 1.45rem;
+    font-weight: bold;
+    padding: 10px 15px;
+    margin-left: 5px;
+    border-radius: 10px;
+    border: none;
+    color: navy;
+    background-color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+#Cbut:hover {
+    background-color: rgb(84, 84, 97);
+}
+#Cbut:active {
+    background-color: rgb(119, 119, 252);
+}
+
+#Submit {
+    font-size: 1.45rem;
+    font-weight: bold;
+    padding: 10px 15px;
+    margin-left: 5px;
+    border-radius: 10px;
+    border: none;
+    color: navy;
+    background-color: white;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+#Submit:hover {
+    background-color: rgb(84, 84, 97);
+}
+#Submit:active {
+    background-color: rgb(119, 119, 252);
 }
