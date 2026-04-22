@@ -18,20 +18,21 @@ h1 {
 }
 
 .nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     list-style: none;
     margin: 0;
     padding: 0;
-    display: flex;
 }
-
 
 .nav a {
     display: block;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 50px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 22px;
 }
 
 .nav a:hover {
@@ -40,28 +41,36 @@ h1 {
 }
 
 .nav a.active {
-    background-color: #04AA6D;
-    color: white;
+    color: navy;
 }
 
-
+/* */
 .Nbut button {
-    background-color: #04AA6D;
     color: black;
     cursor: pointer;
 }
 
 .Nbut button:hover {
-    background-color: #04AA6D;
     color: white;
 }
 
 #ainmain {
-    padding: 10px;
-    color: red;
+    font-size: 1.45rem;
+    font-weight: bold;
+    padding: 10px 15px;
+    margin-left: 5px;
+    border-radius: 10px;
+    border: none;
+    color: navy;
+    background-color: white;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 #ainmain:hover {
-    color: purple;
-    cursor: pointer;
+background-color: rgb(84, 84, 97);
+}
+
+#ainmain:active {
+background-color: rgb(119, 119, 252);
 }
