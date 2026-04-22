@@ -1,5 +1,4 @@
 body {
-    
     background-color: rgb(115, 115, 119);
     margin: 0;
 }
@@ -55,4 +54,14 @@ h1 {
 .Nbut button:hover {
     background-color: #04AA6D;
     color: white;
+}
+
+#ainmain {
+    padding: 10px;
+    color: red;
+}
+
+#ainmain:hover {
+    color: purple;
+    cursor: pointer;
 }

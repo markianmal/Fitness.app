@@ -20,7 +20,7 @@
             </ul>
         </nav>
     </header>
-
+    <h1 for="">Your Workout</h1>
     <main>
         <section>
         <form id="exerciseForm">
@@ -31,10 +31,10 @@
                 <input type="text" id="exerciseName" required placeholder="Exercise name">
             </p>
             <p>
-                <input type="number" id="setsInput" required placeholder="Sets">
+                <input type="number" id="setsInput" required placeholder="Sets" min="1" max="99">
             </p>
             <p>
-                <input type="number" id="repsInput" required placeholder="Reps">
+                <input type="number" id="repsInput" required placeholder="Reps" min="1" max="99">
             </p>
             <p>
                 <button type="submit" id="Cbut">+ Add exercise</button>
