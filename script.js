@@ -72,10 +72,10 @@ document.addEventListener('DOMContentLoaded', () => {
             if (match) {
                 resultsDiv.innerHTML = `
                     <div class="image-preview" style="margin-top: 20px;">
-                        <p style="color: white; font-weight: bold;">Target: ${match}</p>
+                        <p style="color: white; margin-left: 20px; font-weight: bold;">Target: ${match}</p>
                         <img src="images/${muscleImages[match]}" 
                              alt="${match}" 
-                             style="width: 100%; max-width: 300px; border-radius: 15px; border: 2px solid white;">
+                             style="width: 100%; max-width: 175px; border-radius: 15px; margin-left: 10px; border: 2px solid white;">
                     </div>
                 `;
             } else {

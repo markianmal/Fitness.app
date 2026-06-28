@@ -5,17 +5,17 @@ body {
 
 h1 {
     padding-top: 10px;
-    margin-left: 5px;
+    margin-left: 10px;
 }
 h2 {
-    margin-left: 5px;
+    margin-left: 10px;
 }
 
 input {
     font-size: 1.5rem;
     text-align: center;
     width: 200px;
-    margin-left: 5px;
+    margin-left: 10px;
 }
 
 /* navigation bar */
@@ -70,7 +70,7 @@ input {
     font-size: 1.45rem;
     font-weight: bold;
     padding: 10px 15px;
-    margin-left: 5px;
+    margin-left: 10px;
     border-radius: 10px;
     border: none;
     color: navy;
@@ -90,7 +90,7 @@ input {
     font-size: 1.45rem;
     font-weight: bold;
     padding: 10px 15px;
-    margin-left: 5px;
+    margin-left: 10px;
     border-radius: 10px;
     border: none;
     color: navy;
@@ -109,7 +109,7 @@ input {
     font-size: 1.45rem;
     font-weight: bold;
     padding: 10px 15px;
-    margin-left: 5px;
+    margin-left: 10px;
     border-radius: 10px;
     border: none;
     color: navy;
