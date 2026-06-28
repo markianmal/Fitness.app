@@ -5,7 +5,7 @@ const muscleImages = {
     "Triceps": "Triceps.png",
     "Forearms": "Forearms.png",
     "Shoulders": "Shoulders.png",
-    "Upper Back": "UpperBack.png",
+    "Back": "UpperBack.png",
     "Abdominals": "Abdominals.png",
     "Calves": "Calves.png",
     "Glutes": "Glutes.png"
