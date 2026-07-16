@@ -22,22 +22,28 @@
     </header>
 
     <main>
-
         <section>
-            <h1 id="about">Hello Username</h1>
+            <input type="search" name="search" id="search"  required placeholder="Search exercise">
+        </section>
+        <section>
+        <form id="exerciseForm">
+            <p>
+                <input type="text" id="equipment" required placeholder="Equipment">
 
-            <a id="ainmain" href="inmain.html">
-                New workout
-            </a>
+                <input type="text" id="musclegroup" required placeholder="Muscle group">
+            
+            </p>
 
-            <h2>
-                Previous workouts
-            </h2>
+            <p>
+                <a id="ainmain" href="inmain.html">Add exercise</a>
+            </p>
 
-            <h1>m. t. w. t. f. s. s. </h1>
-            <h1>m. t. w. t. f. s. s. </h1>
-            <h1>m. t. w. t. f. s. s. </h1>
-            <h1>m. t. w. t. f. s. s. </h1>
+        </form>
+
+            <div id="exerciseResults" class="results-container"></div>
+
+            <div id="exerciseResults" class="results-container"></div>
+
         </section>
     </main>
 

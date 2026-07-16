@@ -21,31 +21,13 @@
         </nav>
     </header>
     <h1 for="">Workout</h1>
-    <h1 for="">Duration of workout</h1>
+    <h1 for="">Duration XX:XX </h1>
     <main>
-        <section>
-            <h1>Search exercise</h1>
-            <input type="search" name="search" id="search">
-        </section>
         <section>
         <form id="exerciseForm">
             <p>
-                <input type="text" id="muscleGroup" required placeholder="Muscle group">
-            </p>
-            <p>
-                <input type="text" id="exerciseName" required placeholder="Exercise name">
-            </p>
-            <p>
-                <input type="number" id="setsInput" required placeholder="Sets" min="1" max="99">
-            </p>
-            <p>
-                <input type="number" id="repsInput" required placeholder="Reps" min="1" max="99">
-            </p>
-            <p>
-                <input type="number" id="weightInput" required placeholder="Weight" min="0" max="600">
-            </p>
-            <p>
-                <button type="submit" id="Cbut">+ Add exercise</button>
+                <a id="ainmain" href="inmainexercise.html">+ Add exercise</a>
+                <a id="ainmain">X Finish workout</a><br><br>
             </p>
         </form>
 
@@ -53,6 +35,16 @@
 
             <div id="exerciseResults" class="results-container"></div>
 
+        </section>
+
+        <section>
+             <p>
+                <input type="number" id="setsInput" required placeholder="Set" min="1" max="99">
+            
+                <input type="number" id="repsInput" required placeholder="Reps" min="1" max="99">
+                    
+                <input type="number" id="weightInput" required placeholder="Weight" min="0" max="600">
+            </p>
         </section>
     </main>
 

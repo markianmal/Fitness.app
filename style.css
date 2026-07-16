@@ -124,3 +124,29 @@ input {
 #Submit:active {
     background-color: rgb(119, 119, 252);
 }
+
+#search{
+    margin-top: 20px;
+    width: 95%;
+}
+
+#musclegroup{
+    width: 45%;
+}
+
+#equipment{
+    width: 45%;
+}
+
+#setsInput{
+    width: 25%;
+}
+#prevInput{
+    width: 25%;
+}
+#repsInput{
+    width: 25%;
+}
+#weightInput{
+    width: 25%;
+}
