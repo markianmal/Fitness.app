@@ -1,38 +1,36 @@
-// База даних вправ
+// Muscle database mapping
 const exercises = [
     { name: "Bench press", muscle: "Chest", img: "Chest.png" },
     { name: "Hammer bicep curl", muscle: "Biceps", img: "Biceps.png" },
     { name: "Barbell curl", muscle: "Biceps", img: "Biceps.png" },
     { name: "Triceps pushdown", muscle: "Triceps", img: "Triceps.png" },
     { name: "Deadlift", muscle: "Back", img: "UpperBack.png" },
-    { name: "Squats", muscle: "Quads", img: "Calves.png" } // Заміни на реальні картинки за потреби
+    { name: "Squats", muscle: "Calves", img: "Calves.png" }
 ];
 
 let timerInterval;
 
 document.addEventListener('DOMContentLoaded', () => {
     
-    // === 1. РЕДІРЕКТ ПРИ ПЕРШОМУ ВХОДІ ===
+    // First-time user redirect logic
     const isProfileSaved = localStorage.getItem('username');
     const currentFile = window.location.pathname.split("/").pop();
     
-    // Якщо зайшли на сайт (index.html або корінь), а профілю немає — кидаємо на profile.html
     if (!isProfileSaved && (currentFile === "index.html" || currentFile === "")) {
         window.location.href = "profile.html";
         return;
     }
 
-    // === 2. ГОЛОВНА СТОРІНКА (index.html) ===
+    // Home page logic
     const welcomeHeader = document.getElementById('about');
     if (welcomeHeader) {
         welcomeHeader.textContent = `Hello ${isProfileSaved || "Username"}`;
         displayWorkoutHistory();
     }
 
-    // === 3. ПРОФІЛЬ (profile.html) ===
+    // Profile page logic
     const submitBtn = document.getElementById('Submit');
     if (submitBtn) {
-        // Автозаповнення
         if (isProfileSaved) document.getElementById('profileName').value = isProfileSaved;
         const savedHeight = localStorage.getItem('userHeight');
         const savedWeight = localStorage.getItem('userWeight');
@@ -49,29 +47,26 @@ document.addEventListener('DOMContentLoaded', () => {
             localStorage.setItem('userWeight', document.getElementById('profileWeight').value);
             
             alert('Profile saved successfully!');
-            window.location.href = "index.html"; // Після збереження ведемо розробника на головну
+            window.location.href = "index.html";
         });
     }
 
-    // === 4. СЕКУНДОМІР (inmain.html) ===
-    const durationHeader = document.querySelector('h1[for=""]'); // Шукає заголовок з тривалістю
+    // Workout active page logic
+    const durationHeader = document.getElementById('stopwatchDisplay');
     if (durationHeader && currentFile === "inmain.html") {
         startStopwatch(durationHeader);
         
-        // Обробка завершення тренування
-        const endBtn = document.getElementById('ainmain');
+        const endBtn = document.getElementById('endWorkoutBtn');
         if (endBtn) {
             endBtn.addEventListener('click', (e) => {
                 e.preventDefault();
                 finishWorkout();
             });
         }
-
-        // Відображення поточної вибраної вправи (якщо є)
         loadCurrentExercise();
     }
 
-    // === 5. СТОРІНКА ПОШУКУ ВПРАВ (inmainexercise.html) ===
+    // Exercise search page logic
     const searchInput = document.getElementById('search');
     const resultsDiv = document.getElementById('exerciseResults');
     if (searchInput && resultsDiv) {
@@ -99,7 +94,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     resultsDiv.appendChild(card);
                 });
 
-                // Навішуємо подію вибору на створені кнопки
                 document.querySelectorAll('.add-ex-btn').forEach(btn => {
                     btn.addEventListener('click', (e) => {
                         const exName = e.target.getAttribute('data-name');
@@ -112,7 +106,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-// ЛОГІКА СЕКУНДОМІРА
+// Stopwatch execution
 function startStopwatch(element) {
     let startTime = localStorage.getItem('workoutStartTime');
     if (!startTime) {
@@ -129,7 +123,7 @@ function startStopwatch(element) {
     }, 1000);
 }
 
-// Завантаження обраної вправи на робочий екран
+// Display chosen exercise
 function loadCurrentExercise() {
     const activeEx = localStorage.getItem('currentSelectedExercise');
     const container = document.getElementById('exerciseResults');
@@ -142,7 +136,7 @@ function loadCurrentExercise() {
     }
 }
 
-// ЗБЕРЕЖЕННЯ ТРЕНУВАННЯ В ІСТОРІЮ
+// Save log to local storage history
 function finishWorkout() {
     clearInterval(timerInterval);
     const startTime = localStorage.getItem('workoutStartTime');
@@ -167,12 +161,10 @@ function finishWorkout() {
         duration: durationText
     };
 
-    // Дістаємо стару історію або створюємо новий масив
     const history = JSON.parse(localStorage.getItem('workoutHistory')) || [];
-    history.unshift(workoutRecord); // Нові тренування додаємо на початок
+    history.unshift(workoutRecord);
     localStorage.setItem('workoutHistory', JSON.stringify(history));
 
-    // Очищаємо тимчасові дані поточної сесії
     localStorage.removeItem('workoutStartTime');
     localStorage.removeItem('currentSelectedExercise');
 
@@ -180,12 +172,11 @@ function finishWorkout() {
     window.location.href = "index.html";
 }
 
-// ВІДОБРАЖЕННЯ ІСТОРІЇ НА ГОЛОВНІЙ
+// Render dynamic elements to home DOM
 function displayWorkoutHistory() {
     const historyContainer = document.querySelector('main section');
     const history = JSON.parse(localStorage.getItem('workoutHistory')) || [];
     
-    // Видаляємо старі статичні h1 календаря, якщо вони є
     const headersToRemove = historyContainer.querySelectorAll('h1:not(#about)');
     headersToRemove.forEach(h => h.remove());
 

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,9 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="images/0logo.png">
 </head>
-
 <body>
-
     <header>
         <nav class="nav">
             <ul>
@@ -23,31 +20,22 @@
 
     <main>
         <section>
-            <input type="search" name="search" id="search"  required placeholder="Search exercise">
+            <input type="search" name="search" id="search" required placeholder="Search exercise">
         </section>
         <section>
-        <form id="exerciseForm">
-            <p>
-                <input type="text" id="equipment" required placeholder="Equipment">
-
-                <input type="text" id="musclegroup" required placeholder="Muscle group">
-            
-            </p>
-
-            <p>
-                <a id="ainmain" href="inmain.html">Add to workout</a>
-            </p>
-
-        </form>
-
+            <form id="exerciseForm">
+                <p>
+                    <input type="text" id="equipment" required placeholder="Equipment">
+                    <input type="text" id="musclegroup" required placeholder="Muscle group">
+                </p>
+                <p>
+                    <a class="btn btn-new" href="inmain.html">Add to workout</a>
+                </p>
+            </form>
             <div id="exerciseResults" class="results-container"></div>
-
-            <div id="exerciseResults" class="results-container"></div>
-
         </section>
     </main>
 
     <script src="script.js"></script>
 </body>
-
 </html>
