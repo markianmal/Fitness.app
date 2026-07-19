@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,9 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="images/0logo.png">
 </head>
-
 <body>
-
     <header>
         <nav class="nav">
             <ul>
@@ -20,31 +17,25 @@
             </ul>
         </nav>
     </header>
-    <h1 for="">Workout</h1>
+    
+    <h1>Workout</h1>
+    <a id="endWorkoutBtn" class="btn btn-end" href="#">X End</a>
+    <h1 id="stopwatchDisplay">Duration 00:00</h1>
 
-    <a id="ainmain">X End</a>
-
-    <h1 for="">Duration 14:88 </h1>
     <main>
         <section>
-        <form id="exerciseForm">
-            <p>
-                <a id="ainmain" href="inmainexercise.html">+ Add exercise</a>
-            </p>
-        </form>
-
+            <form id="exerciseForm">
+                <p>
+                    <a class="btn btn-new" href="inmainexercise.html">+ Add exercise</a>
+                </p>
+            </form>
             <div id="exerciseResults" class="results-container"></div>
-
-            <div id="exerciseResults" class="results-container"></div>
-
         </section>
 
         <section>
-             <p>
+            <p>
                 <input type="number" id="setsInput" required placeholder="Set" min="1" max="99">
-            
                 <input type="number" id="repsInput" required placeholder="Reps" min="1" max="99">
-                    
                 <input type="number" id="weightInput" required placeholder="Weight" min="0" max="600">
             </p>
         </section>
@@ -52,5 +43,4 @@
 
     <script src="script.js"></script>
 </body>
-
 </html>
