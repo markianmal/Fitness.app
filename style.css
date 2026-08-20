@@ -18,9 +18,17 @@ h2 {
 
 input {
     font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 15px;
+    margin-left: 15px;
+    border-radius: 10px;
     text-align: center;
     width: 200px;
-    margin-left: 15px;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    background-color: gray;
 }
 
 /* Navigation bar section*/
@@ -52,7 +60,6 @@ input {
 }
 
 .nav a:hover {
-    
     color: rgb(32, 32, 32);
 }
 
@@ -74,13 +81,11 @@ input {
     font-size: 1.45rem;
     font-weight: bold;
     padding: 10px 15px;
-    margin-left: 10px;
+    margin-left: 15px;
     border-radius: 10px;
     border: none;
     cursor: pointer;
     text-decoration: none;
-    display: inline-block;
-    transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 /* Button modifier style: new workout trigger*/
@@ -103,7 +108,6 @@ input {
 .btn-end {
     color: palevioletred;
     background-color: rgb(200, 35, 35);
-    margin-left: 15px;
 }
 
 .btn-end:hover {
@@ -133,31 +137,17 @@ input {
 /* Input dimension adjustments*/
 #search {
     margin-top: 20px;
-    width: 90%;
+    width: 99%;
 }
 
-#musclegroup {
-    width: 45%;
+#musclegroup, #equipment {
+    width: 35%;
+    margin-bottom: 20px;
 }
 
-#equipment {
-    width: 45%;
-}
-
-#setsInput {
-    width: 25%;
-}
-
-#prevInput {
-    width: 25%;
-}
-
-#repsInput {
-    width: 25%;
-}
-
-#weightInput {
-    width: 25%;
+#setsInput, #prevInput, #repsInput, #weightInput {
+    width: 30%;
+    margin-bottom: 20px;
 }
 
 #stopwatchDisplay {
