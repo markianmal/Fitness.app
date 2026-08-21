@@ -79,7 +79,7 @@ input::placeholder {
 }
 
 #musclegroup, #equipment {
-    width: 35%;
+    width: 33%;
     margin-bottom: 20px;
 }
 
@@ -155,7 +155,7 @@ input::placeholder {
 /* Button modifier style: data form execution*/
 .btn-submit {
     color: white;
-    background-color: gray;
+    background-color: rgb(69, 69, 69);
 }
 
 .btn-submit:hover {
