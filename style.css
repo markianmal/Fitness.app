@@ -72,7 +72,6 @@ input::placeholder {
     color: white;
 }
 
-
 #search {
     margin-top: 20px;
     width: 85%;
@@ -97,7 +96,6 @@ input::placeholder {
 #stopwatchDisplay {
     color: rgb(81, 81, 251);
 }
-
 
 .Nbut button {
     color: black;
