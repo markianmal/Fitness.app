@@ -94,7 +94,7 @@ input::placeholder {
 }
 
 #stopwatchDisplay {
-    color: rgb(81, 81, 251);
+    color: rgb(50, 36, 175);
 }
 
 .Nbut button {
@@ -145,12 +145,13 @@ input::placeholder {
 }
 
 .btn-end:hover {
-    background-color: rgb(87, 14, 14);
     color: rgb(216, 60, 86);
+    background-color: rgb(87, 14, 14);
 }
 
 .btn-end:active {
-    background-color: rgb(100, 15, 15);
+    color: rgba(216, 60, 86, 0.5);
+    background-color: rgba(87, 14, 14, 0.5);
 }
 
 /* Button modifier style: data form execution*/
@@ -165,5 +166,6 @@ input::placeholder {
 }
 
 .btn-submit:active {
-    background-color: rgb(20, 80, 20);
+    color: navy;
+    background-color: rgb(50, 36, 175);
 }
