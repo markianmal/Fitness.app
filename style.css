@@ -45,11 +45,11 @@ h2 {
 }
 
 .nav a:hover {
-    color: rgb(21, 21, 21);
+    color: rgb(50, 36, 175);
 }
 
 .nav a.active {
-    color: navy;
+    color: rgb(50, 36, 175);
 }
 
 /* Input dimension adjustments*/
@@ -134,7 +134,8 @@ input::placeholder {
 }
 
 .btn-new:active {
-    background-color: rgb(119, 119, 252);
+    background-color: rgb(50, 36, 175);
+    color: navy;
 }
 
 /* Button modifier style: stop workout event*/
