@@ -100,6 +100,19 @@ input::placeholder {
     margin-left: 15px;
 }
 
+.workout-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.workout-header h1 {
+    margin: 0;
+    padding-top: 10px;
+    margin-left: 15px;
+}
+
 #stopwatchDisplay {
     color: rgb(50, 76, 175);
 }
@@ -147,6 +160,7 @@ input::placeholder {
 
 /* Button modifier style: stop workout event */
 .btn-end {
+    margin-top: 20px;
     color: rgb(243, 145, 177);
     background-color: rgb(200, 35, 35);
 }
