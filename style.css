@@ -78,16 +78,18 @@ input::placeholder {
 
 #search {
     text-align: left;
-    margin-top: 20px;
+    margin-top: 40px;
     width: 85%;
 }
 
 #musclegroup, #equipment {
-    width: 35%;
-    margin-bottom: 20px;
+    width: 200px;
+    margin-right: 5px;
+    margin-bottom: 0px;
 }
 
 #setsInput, #prevInput, #repsInput, #weightInput {
+    
     width: 89px;
     margin-bottom: 20px;
     margin-left: 1%;
