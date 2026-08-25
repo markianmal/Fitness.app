@@ -45,11 +45,11 @@ h2 {
 }
 
 .nav a:hover {
-    color: rgb(50, 36, 175);
+    color: rgb(50, 76, 175);
 }
 
 .nav a.active {
-    color: rgb(50, 36, 175);
+    color: rgb(50, 76, 175);
 }
 
 .nav a:active {
@@ -99,7 +99,7 @@ input::placeholder {
 }
 
 #stopwatchDisplay {
-    color: rgb(50, 36, 175);
+    color: rgb(50, 76, 175);
 }
 
 .Nbut button {
@@ -139,7 +139,7 @@ input::placeholder {
 }
 
 .btn-new:active {
-    background-color: rgb(50, 36, 175);
+    background-color: rgb(50, 76, 175);
     color: navy;
 }
 
@@ -172,5 +172,5 @@ input::placeholder {
 
 .btn-submit:active {
     color: navy;
-    background-color: rgb(50, 36, 175);
+    background-color: rgb(50, 76, 175);
 }
