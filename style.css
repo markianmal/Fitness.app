@@ -77,6 +77,7 @@ input::placeholder {
 }
 
 #search {
+    text-align: left;
     margin-top: 20px;
     width: 85%;
 }
