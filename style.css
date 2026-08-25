@@ -84,7 +84,7 @@ input::placeholder {
 
 #equipment, #musclegroup{
     width: 185px;
-    margin-right: 0px;
+    margin-right: -5px;
     margin-bottom: 0px;
 }
 
